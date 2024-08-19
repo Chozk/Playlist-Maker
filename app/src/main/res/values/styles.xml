@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="CustomButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/basic_text_background_dark</item>
+        <item name="android:layout_weight">1</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/button_icon_padding</item>
+        <item name="iconTint">@color/basic_text_background_dark</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+</resources>
