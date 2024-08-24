@@ -21,26 +21,23 @@ class MainActivity : AppCompatActivity() {
         val mediaButton = findViewById<Button>(R.id.mediaButton)
         val settingsButton = findViewById<Button>(R.id.settingsButton)
 
-        //способ 1
-        val searchButtonClickListener: View.OnClickListener = object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                val searchIntent = Intent(this@MainActivity, SearchActivity::class.java)
-                startActivity(searchIntent)
-            }
+        //кнопка поиска
+        searchButton.setOnClickListener {
+            val searchIntent = Intent(this@MainActivity, SearchActivity::class.java)
+            startActivity(searchIntent)
         }
-        searchButton.setOnClickListener(searchButtonClickListener)
 
-        //способ 2
-        val mediaButtonClickListener: View.OnClickListener = View.OnClickListener {
+        //кнопка медиа
+        mediaButton.setOnClickListener {
             val mediaIntent = Intent(this@MainActivity, MediaActivity::class.java)
             startActivity(mediaIntent)
         }
-        mediaButton.setOnClickListener(mediaButtonClickListener)
 
-        //способ 3
+        //кнопка настроек
         settingsButton.setOnClickListener {
-            val settingsIntent = Intent(this, SettingsActivity::class.java)
+            val settingsIntent = Intent(this@MainActivity, SettingsActivity::class.java)
             startActivity(settingsIntent)
         }
     }
 }
+

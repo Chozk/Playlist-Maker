@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light"
+    android:background="@color/main_background"
     android:paddingHorizontal="@dimen/horizontal_padding"
+    android:paddingTop="24dp"
+    android:paddingBottom="48dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,45 +17,45 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="16dp"
+        android:paddingBottom="24dp"
         android:text="@string/app_name"
         android:textColor="@color/white"
         android:textSize="@dimen/title_size"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:paddingBottom="24dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/searchButton"
-        style="@style/CustomButtonStyle"
+        style="@style/ButtonStyle"
         android:text="@string/search"
         app:icon="@drawable/search"
-        app:layout_constraintTop_toBottomOf="@id/app_name_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/mediaButton"
-        app:layout_constraintHeight_default="spread"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_name_text" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/mediaButton"
-        style="@style/CustomButtonStyle"
+        style="@style/ButtonStyle"
         android:text="@string/media"
         app:icon="@drawable/media"
-        app:layout_constraintTop_toBottomOf="@id/searchButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/settingsButton"
-        app:layout_constraintHeight_default="spread"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/settingsButton"
-        style="@style/CustomButtonStyle"
+        style="@style/ButtonStyle"
         android:text="@string/settings"
         app:icon="@drawable/settings"
-        app:layout_constraintTop_toBottomOf="@id/mediaButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHeight_default="spread"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mediaButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
