@@ -45,7 +45,7 @@ class SettingsActivity : AppCompatActivity() {
 
         val backButton = findViewById<ImageView>(R.id.arrow_back)
         backButton.setOnClickListener {
-            onBackPressedDispatcher.onBackPressed()
+            finish()
         }
 
         val shareButton = findViewById<TextView>(R.id.shareButton)
