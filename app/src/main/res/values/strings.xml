@@ -9,4 +9,9 @@
     <string name="share_app">Поделиться приложением</string>
     <string name="support">Написать в поддержку</string>
     <string name="eula">Пользовательское соглашение</string>
+    <string name="share_url">https://practicum.yandex.ru/android-developer/?from=catalog</string>
+    <string name="support_email">chozehype@gmail.com</string>
+    <string name="support_subject">Сообщение разработчикам и разработчицам приложения Playlist Maker</string>
+    <string name="support_message">Спасибо разработчикам и разработчицам за крутое приложение!</string>
+    <string name="eula_url">https://yandex.ru/legal/practicum_offer/</string>
 </resources>
